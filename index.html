@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $(".fa-search").click(function () {
+          $(".searchicon").toggleClass("active");
+          $("input[type='search']").toggleClass("active");
+        });
+      });
+    </script>
+    <title id="title-dash">Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid img2">
+      <div class="row">
+        <div class="col-1 nav-col">
+          <nav class="nav-vertical">
+            <ul>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/16/519691-199_CircledPlus-512.png"
+                    width="35px"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_dashboard_48px-512.png"
+                    width="35px"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/line-chart-512.png"
+                    width="35px;"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn4.iconfinder.com/data/icons/materia-social-free/24/038_028_share_link_friends_send_android_material-512.png"
+                    width="35px"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn4.iconfinder.com/data/icons/user-interface-glyph-5/32/Notification-512.png"
+                    width="35px"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="nav-icons"
+                    src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/settings-512.png"
+                    width="35px"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    id="profile2"
+                    class="images"
+                    src="./images/4.jpg"
+                    width="75px;"
+                    alt="profile-pic"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-8 col-sm-8 col-md-8 cont">
+          <div class="spacer"></div>
+          <h2>DASHBOARD</h2>
+          <div class="card-deck">
+            <div class="card shadow">
+              <img src="./images/6 (1).jpg" class="card-img" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">TOP SECRET!</h5>
+                <div class="row icon-set">
+                  <div class="followers">
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="notifications"><i class="far fa-comments"></i></div>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="./images/6.jpg" class="card-img" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">HOW SWEET IT IS</h5>
+                <div class="row icon-set">
+                  <div class="followers">
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="notifications"><i class="far fa-comments"></i></div>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="./images/7.jpg" class="card-img" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">RIBBIT!</h5>
+                <div class="row icon-set">
+                  <div class="followers">
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                    <a href=""
+                      ><img
+                        class="card-icon"
+                        src="./images/4.jpg"
+                        width="50px"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="notifications"><i class="far fa-comments"></i></div>
+              </div>
+            </div>
+          </div>
+          <canvas id="myLineChart"></canvas>
+          <script>
+            var ctx = document.getElementById("myLineChart").getContext("2d");
+            ctx.canvas.width = 100;
+            ctx.canvas.height = 30;
+            var myLineChart = new Chart(ctx, {
+              type: "line",
+              data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [
+                  {
+                    label: " ",
+                    data: [0.2, 0.5, 0.2, 0.5, 0.2, 0.3],
+                    backgroundColor: [
+                      "rgba(255, 99, 132, 0)",
+                      "rgba(54, 162, 235, 0.2)",
+                      "rgba(255, 206, 86, 0.2)",
+                      "rgba(75, 192, 192, 0.2)",
+                      "rgba(153, 102, 255, 0.2)",
+                      "rgba(255, 159, 64, 0.2)",
+                    ],
+                    borderColor: [
+                      "rgba(255, 255, 255, 1)",
+                      "rgba(54, 162, 235, 0)",
+                      "rgba(255, 206, 86, 0)",
+                      "rgba(255, 255, 255, 1)",
+                      "rgba(153, 102, 255, 0)",
+                      "rgba(255, 159, 64, 0)",
+                    ],
+                    borderWidth: 7,
+                  },
+                ],
+              },
+              options: {
+                layout: {
+                  padding: {
+                    top: 100,
+                    right: 50,
+                    left: 50,
+                    bottom: 0,
+                  },
+                },
+                legend: {
+                  display: false,
+                },
+                title: {
+                  display: true,
+                  text: "Number Of Likes",
+                  position: top,
+                },
+                scales: {
+                  xAxes: [
+                    {
+                      display: false,
+                      ticks: {
+                        beginAtZero: false,
+                      },
+                    },
+                  ],
+                  yAxes: [
+                    {
+                      display: false,
+                      ticks: {
+                        beginAtZero: true,
+                      },
+                    },
+                  ],
+                },
+              },
+            });
+          </script>
+          <div class="row">
+            <div class="col-md chart">
+              <h3>Followers By Day</h3>
+              <canvas id="myChart"></canvas>
+
+              <script>
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                    labels: [12, 19, 3, 5, 2, 3, 10, 8, 5, 15, 2],
+                    datasets: [
+                      {
+                        label: "# of Votes",
+                        data: [12, 19, 3, 5, 2, 3, 10, 8, 5, 15, 2],
+                        backgroundColor: [
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                        ],
+                        borderColor: [
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                          "rgba(243, 0, 150, 1)",
+                        ],
+                        barThickness: 10,
+                        borderWidth: 1,
+                        lineWidth: 10,
+                        borderSkipped: "bottom",
+                      },
+                    ],
+                  },
+                  options: {
+                    legend: {
+                      display: false,
+                    },
+                    scales: {
+                      xAxes: [
+                        {
+                          gridLines: {
+                            display: false,
+                          },
+                          display: true,
+                          ticks: {
+                            beginAtZero: false,
+                          },
+                        },
+                      ],
+                      yAxes: [
+                        {
+                          display: false,
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                }).BarAlt({ curvature: 10 });
+              </script>
+            </div>
+            <div class="col-sm tfs">
+              <h3 id="follow-heading">Top Followers</h3>
+              <div class="row tf tf-top">
+                <div class="followers">
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="row tf">
+                <div class="followers">
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="tf-img"
+                      src="./images/4.jpg"
+                      width="50px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 cont">
+          <div class="wrapper">
+            <div class="searchbar">
+              <input type="search" placeholder="    Search" />
+              <div class="searchicon"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+          <div class="id shadow">
+            <div>
+              <a href=""
+                ><img id="profile" src="./images/4.jpg" width="100px" alt=""
+              /></a>
+              <div class="text-center">
+                <h3>HOWARD PINSKY</h3>
+                <p>Eaters of burritos</p>
+              </div>
+            </div>
+            <hr />
+            <div class="stats">
+              <div class="stat">
+                <h3>630</h3>
+                <p>Photos</p>
+              </div>
+              <div class="stat">
+                <h3>2.4K</h3>
+                <p>Followers</p>
+              </div>
+              <div class="stat">
+                <h3>239</h3>
+                <p>Follows</p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow activity">
+            <h3>ACTIVITY</h3>
+            <div class="comments">
+              <div class="comment">
+                <div class="imgs">
+                  <img src="./images/3.jpg" width="50px;" alt="" />
+                </div>
+                <div class="active-commment">
+                  <p>"Cutest frog EVER!"</p>
+                  <span>February 7th 2020 * 9 AM</span>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="imgs">
+                  <img src="./images/3.jpg" width="50px;" alt="" />
+                </div>
+                <div class="active-commment">
+                  <p>"Literally me."</p>
+                  <span>February 74th 2020 * 8 AM</span>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="imgs">
+                  <img src="./images/3.jpg" width="50px;" alt="" />
+                </div>
+                <div class="active-commment">
+                  <p>"Where's dark mode?!"</p>
+                  <span>February 1st 2020 * 11 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f3ff0c6b59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
